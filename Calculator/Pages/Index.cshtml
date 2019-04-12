@@ -5,6 +5,27 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">You have stumbled onto the SimpleCalculator</h1>
+    <h1 class="display-4">The SimpleCalculator</h1>
     <p>The calculator that only adds numbers.</p>
 </div>
+
+
+
+<div>
+    <form method="post">
+        <label>First Number:</label>
+        <br/>
+        <input asp-for="@Model.firstNumber"/>
+        <br/>
+        <label>Second Number:</label>
+        <br/>
+        <input asp-for="@Model.secondNumber"/>
+        <br/>
+        <br/>
+        <input type="submit"/>
+        <br/>
+        <br/>
+        <label>Result: </label><label>@Model.Result</label>
+    </form>
+</div>
+
