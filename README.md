@@ -12,12 +12,12 @@ This is an exercise. The requirements were:
 
 In this solution, the two numbers are not limited to being between 0 and 9, but rather can be an arbitrary integer
 or a float value. If we were to enforce the 0-9 requirement, we would have to put in guard clauses on the allowed values,
-along with messages to the user if the values are not allowed.
+along with messages to the user if the values are out of range.
 
 
 ### How?
-As there were no hard requirement on how this Calculator should work, one of decisions to be made was what kind
-of User Interface we wanted on the calculator. Do we want a simple command-line tool, a stand-alone executable
+As there was no hard requirement on how this Calculator should work, one of decisions to be made was what kind
+of User Interface we wanted on the calculator. A simple command-line tool, a stand-alone executable
 with some-kind of graphical user interface, or a web-app?
 
 We choose the web-based approach. There is good tooling for deploying web-based apps, so it seemed like a good
