@@ -51,6 +51,11 @@ The CalcAddWebTests.cs file is holds the end-to-end tests, which are run using [
 The CalcAddWebTests Class in this file has higher level abstraction of the web-tests, while the Selenium implementation
 details are kept in the Calculator.TestAutomation project.
 
+One of the manual tests was to try to input a string in one or both of the input fields. The calculator does not throw 
+an error when this is done, but if one of the fields has a numeric value, that value gets returned to the Result.
+
+Also note that the app uses US convention (period) for separating decimals.
+
 ### Deployment
 A CI loop has been setup with Azure App Services, so that a new version is deployed on each commit or
 pull request to the master branch. 
