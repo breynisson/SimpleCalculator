@@ -6,7 +6,7 @@ The SimpleCalculator can be found at:
 [https://breynisson-simple-calc.azurewebsites.net](https://breynisson-simple-calc.azurewebsites.net)
 
 
-###Why?
+### Why?
 This is an exercise. The requirements were:
 > Source code for a solution for a simple calculator where two numbers between 0 and 9 are added.
 
@@ -15,7 +15,7 @@ or a float value. If we were to enforce the 0-9 requirement, we would have to pu
 along with messages to the user if the values are not allowed.
 
 
-###How?
+### How?
 As there were no hard requirement on how this Calculator should work, one of decisions to be made was what kind
 of User Interface we wanted on the calculator. Do we want a simple command-line tool, a stand-alone executable
 with some-kind of graphical user interface, or a web-app?
@@ -23,7 +23,7 @@ with some-kind of graphical user interface, or a web-app?
 We choose the web-based approach. There is good tooling for deploying web-based apps, so it seemed like a good
 choice.
 
-###Implementation
+### Implementation
 The project is a ASP.NET Core Web application, with an Index page which has two input fields and
 a Calculate button. The input values are bound to float properties and the result of the additon is
 bound to a label field on post. As simple as it gets.
@@ -42,7 +42,7 @@ Calculator is the web-based project, while Calculator.Tests and Calculator.TestA
 While splitting the testing code into two project is overkill for such a simple project, we do it here as an example of
 how we might structure the testing-framework for a more complex project.
 
-###Testing
+### Testing
 In the Calculator.Tests project, we have a UnitTest.cs file, and a CalcAddWebTests.cs file. The naming of the first file
 tells us which kind of tests we find there. There are two super-simple unit-tests, which, one might argue are more for 
 demonstration purposes, since we are testing if addition works.
@@ -51,7 +51,7 @@ The CalcAddWebTests.cs file is holds the end-to-end tests, which are run using [
 The CalcAddWebTests Class in this file has higher level abstraction of the web-tests, while the Selenium implementation
 details are kept in the Calculator.TestAutomation project.
 
-###Deployment
+### Deployment
 A CI loop has been setup with Azure App Services, so that a new version is deployed on each commit or
 pull request to the master branch. 
 
