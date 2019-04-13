@@ -49,7 +49,9 @@ demonstration purposes, since we are testing if addition works.
 
 The CalcAddWebTests.cs file is holds the end-to-end tests, which are run using [Selenium](https://www.seleniumhq.org).
 The CalcAddWebTests Class in this file has higher level abstraction of the web-tests, while the Selenium implementation
-details are kept in the Calculator.TestAutomation project.
+details are kept in the Calculator.TestAutomation project. The Selenium test do currently not do anything more than
+opening up the webpage. There are a few not implemented functions that would take care of finding the correct elements,
+inserting the values, and initiating the calculation.
 
 One of the manual tests was to try to input a string in one or both of the input fields. The calculator does not throw 
 an error when this is done, but if one of the fields has a numeric value, that value gets returned to the Result.
