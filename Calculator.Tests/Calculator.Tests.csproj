@@ -15,6 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Calculator.TestAutomation\Calculator.TestAutomation.csproj" />
       <ProjectReference Include="..\Calculator\Calculator.csproj" />
     </ItemGroup>
 
