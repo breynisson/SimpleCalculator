@@ -2,10 +2,6 @@
 
 A super-simple calculator that takes two numbers and adds them.
 
-The SimpleCalculator can be found at:
-[https://breynisson-simple-calc.azurewebsites.net](https://breynisson-simple-calc.azurewebsites.net)
-
-
 ### Why?
 This is an exercise. The requirements were:
 > Source code for a solution for a simple calculator where two numbers between 0 and 9 are added.
